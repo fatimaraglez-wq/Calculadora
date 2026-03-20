@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Permisos Linux</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Permisos Linux</h2>
+
+        <input 
+            type="text" 
+            id="permiso" 
+            placeholder="Ej: 777" 
+            maxlength="3"
+        >
+
+        <select id="owner">
+            <option value="">Propietario</option>
+            <option value="7">rwx (lectura, escritura y ejecución)</option>
+            <option value="6">rw- (lectura y escritura)</option>
+            <option value="5">r-x (lectura y ejecución)</option>
+            <option value="4">r-- (solo lectura)</option>
+            <option value="3">-wx (escritura y ejecución)</option>
+            <option value="2">-w- (solo escritura)</option>
+            <option value="1">--x (solo ejecución)</option>
+            <option value="0">--- (sin permisos)</option>
+        </select>
+
+        <select id="group">
+            <option value="">Grupo</option>
+            <option value="7">rwx (lectura, escritura y ejecución)</option>
+            <option value="6">rw- (lectura y escritura)</option>
+            <option value="5">r-x (lectura y ejecución)</option>
+            <option value="4">r-- (solo lectura)</option>
+            <option value="3">-wx (escritura y ejecución)</option>
+            <option value="2">-w- (solo escritura)</option>
+            <option value="1">--x (solo ejecución)</option>
+            <option value="0">--- (sin permisos)</option>
+        </select>
+
+        <select id="others">
+            <option value="">Otros</option>
+            <option value="7">rwx (lectura, escritura y ejecución)</option>
+            <option value="6">rw- (lectura y escritura)</option>
+            <option value="5">r-x (lectura y ejecución)</option>
+            <option value="4">r-- (solo lectura)</option>
+            <option value="3">-wx (escritura y ejecución)</option>
+            <option value="2">-w- (solo escritura)</option>
+            <option value="1">--x (solo ejecución)</option>
+            <option value="0">--- (sin permisos)</option>
+        </select>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
